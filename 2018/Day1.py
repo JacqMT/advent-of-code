@@ -7,10 +7,9 @@ for line in f.readlines():
 freq = 0
 freqs = [freq]
 index = 0
-while index < len(changes):
-    if index == len(changes)-1:
+while index <= len(changes):
+    if index == len(changes):
         index = 0
-        print("No duplicate found this loop. Continuing.")
     freq += changes[index]
     if freq in freqs:
         print("Duplicate frequency found: " + str(freq))
