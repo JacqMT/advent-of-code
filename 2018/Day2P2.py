@@ -1,5 +1,3 @@
-import difflib
-
 f = open(r"2018/assets/boxIds.txt")
 
 one = ""
